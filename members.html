@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Members Management</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="nav-left">
+
+<img src="images/Logo.png.jpg" class="logo" alt="Library Logo">
+
+<h2>Talha Library</h2>
+
+</div>
+
+<div class="nav-right">
+
+<a href="dashboard.html">Dashboard</a>
+<a href="books.html">Books</a>
+<a href="members.html">Members</a>
+<a href="profile.html">Profile</a>
+
+<button class="btn btn-danger" onclick="logout()">
+Logout
+</button>
+
+</div>
+
+</nav>
+
+<div class="container">
+
+<h1>Members Management</h1>
+
+<div class="card">
+
+<div class="form-group">
+<input type="text" id="memberName" placeholder="Member Name">
+</div>
+
+<div class="form-group">
+<input type="email" id="memberEmail" placeholder="Member Email">
+</div>
+
+<div class="form-group">
+<input type="text" id="memberPhone" placeholder="Phone Number">
+</div>
+
+<button class="btn btn-success">
+➕ Add Member
+</button>
+
+<button class="btn btn-danger">
+🗑 Delete All
+</button>
+
+</div>
+
+<div class="search-box">
+
+<input type="text" placeholder="🔍 Search Member">
+
+</div>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+<th>Name</th>
+<th>Email</th>
+<th>Phone</th>
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>1</td>
+<td>Ali Khan</td>
+<td>ali@gmail.com</td>
+<td>03001234567</td>
+
+<td>
+
+<button class="btn">
+Edit
+</button>
+
+<button class="btn btn-danger">
+Delete
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>2</td>
+<td>Ahmed Raza</td>
+<td>ahmed@gmail.com</td>
+<td>03111234567</td>
+
+<td>
+
+<button class="btn">
+Edit
+</button>
+
+<button class="btn btn-danger">
+Delete
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>3</td>
+<td>Talha Shabbir</td>
+<td>talha@gmail.com</td>
+<td>03221234567</td>
+
+<td>
+
+<button class="btn">
+Edit
+</button>
+
+<button class="btn btn-danger">
+Delete
+</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

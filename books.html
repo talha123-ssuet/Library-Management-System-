@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Management</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="nav-left">
+            <img src="images/Logo.png.jpg" class="logo" alt="Logo">
+            <h2>Talha Library</h2>
+        </div>
+
+        <div class="nav-right">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="books.html">Books</a>
+            <a href="members.html">Members</a>
+            <a href="profile.html">Profile</a>
+
+            <button class="btn btn-danger" onclick="logout()">Logout</button>
+        </div>
+
+    </nav>
+
+    <div class="container">
+
+        <h1>Books Management</h1>
+
+        <div class="card">
+
+            <div class="form-group">
+                <input type="text" id="bookName" placeholder="Book Name">
+            </div>
+
+            <div class="form-group">
+                <input type="text" id="authorName" placeholder="Author Name">
+            </div>
+
+            <button class="btn btn-success" onclick="addBook()"></button>
+                ➕ Add Book
+            </button>
+
+            <button class="btn btn-danger"></button>
+                🗑 Delete All
+            </button>
+
+        </div>
+
+        <div class="search-box">
+
+            <input
+    type="text"
+    id="searchBook"
+    placeholder="🔍 Search Book"
+    onkeyup="searchBook()">
+
+        </div>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+                    <th>Book Name</th>
+                    <th>Author</th>
+                    <th>Status</th>
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>1</td>
+                    <td>Java Programming</td>
+                    <td>James Gosling</td>
+                    <td>Available</td>
+
+                    <td>
+
+                        <button class="btn">Edit</button>
+
+                        <button class="btn btn-danger">Delete</button>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>2</td>
+                    <td>Python Programming</td>
+                    <td>Guido van Rossum</td>
+                    <td>Issued</td>
+
+                    <td>
+
+                        <button class="btn">Edit</button>
+
+                        <button class="btn btn-danger">Delete</button>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>3</td>
+                    <td>HTML & CSS</td>
+                    <td>John Duckett</td>
+                    <td>Available</td>
+
+                    <td>
+
+                        <button class="btn">Edit</button>
+
+                        <button class="btn btn-danger">Delete</button>
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
